@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .prose {
+    @apply text-gray-900;
+  }
+  
+  .prose p {
+    @apply my-3 leading-relaxed;
+  }
+  
+  .prose code {
+    @apply px-1.5 py-0.5 rounded bg-gray-100 text-gray-800 font-mono text-sm;
+  }
+  
+  .prose pre {
+    @apply p-4 rounded-xl bg-gray-100 overflow-x-auto my-4;
+  }
+  
+  .prose pre code {
+    @apply bg-transparent p-0;
+  }
+  
+  .prose blockquote {
+    @apply pl-4 border-l-4 border-blue-200 text-gray-600 italic my-4;
+  }
+  
+  .prose ul {
+    @apply list-disc list-inside my-4 space-y-2;
+  }
+  
+  .prose ol {
+    @apply list-decimal list-inside my-4 space-y-2;
+  }
+  
+  .prose h1, .prose h2, .prose h3, .prose h4 {
+    @apply font-semibold text-gray-900 my-4;
+  }
+  
+  .prose h1 {
+    @apply text-2xl;
+  }
+  
+  .prose h2 {
+    @apply text-xl;
+  }
+  
+  .prose h3 {
+    @apply text-lg;
+  }
+}
